@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ propertise.php?url=$1 [QSA,L]
+
+#RewriteRule ^(.*)$ $1.html [NC,L]

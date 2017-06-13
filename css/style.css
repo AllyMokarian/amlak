@@ -1,0 +1,1827 @@
+/* CSS Document */
+
+html,
+body,
+div,
+input,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'WYekan';
+    src: url('../fonts/WebYekan.eot');
+    src: url('../fonts/WebYekan.eot?#iefix') format('embedded-opentype'), url('../fonts/WebYekan.woff') format('woff'), url('../fonts/WebYekan.ttf') format('truetype'), url('../fonts/WebYekan.svg#WebYekan') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600–06FF;
+}
+
+@font-face {
+    font-family: 'sans';
+    src: url('../fonts/IRANSans-Bold.eot');
+    src: url('../fonts/IRANSans-Bold.woff2') format('embedded-opentype'), url('../fonts/IRANSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+    unicode-range: U+0600–06FF;
+}
+
+@font-face {
+    font-family: 'sans';
+    src: url('../fonts/IRANSANSExpanded.eot');
+    src: url('../fonts/IRANSANSExpanded.woff') format('embedded-opentype'), url('../fonts/IRANSANSExpanded.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600–06FF;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir.woff') format('woff'), url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Bold.woff') format('woff'), url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../Vazir-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Light.woff') format('woff'), url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+body {
+    font-family: sans;
+    font-size: 14px;
+    direction: rtl;
+    background-color: #e0e0e0;
+}
+
+
+/*************menu************/
+
+.menu {
+    float: right;
+}
+
+.navbar-default {
+    background-color: #9fb5e1 !important;
+}
+
+.bg_menu {
+    background-color: #3F51B5;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.menu .active {}
+
+
+/*************end menu************/
+
+.login {
+    float: left;
+    width: 176px;
+    height: 78px;
+    margin-bottom: 1px;
+    border-radius: 3px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.register {
+    float: left;
+    margin-top: 5px;
+}
+
+.login span {}
+
+.login span a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login .vorod {
+    border-left: 1px solid #ccc;
+    display: inline-block;
+    padding-left: 12px;
+}
+
+.login .modal-content span i {
+    margin-left: 5px;
+}
+
+.alert_top {
+    width: 97%;
+}
+
+
+/********************************************search pictures*******/
+
+.pic {
+    background-image: url(../img/hero1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.search {
+    background-color: #107CE2;
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 14px;
+    border-radius: 4px;
+}
+
+.search .search-right {
+    /*! width: 99%; */
+    /*! height: 100%; */
+    background-color: #5C97BF;
+    float: right;
+    border-radius: 4px;
+}
+
+.search .search-right button {
+    padding: 8px;
+    float: left;
+}
+
+.search .search-right h1 {
+    font-size: 13px;
+    margin-top: 7px;
+    margin-right: 5px;
+    color: #2d556f;
+    margin-bottom: 5px;
+}
+
+.search .search-right .text-box {
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.search .search-right #tab-1 select,
+#tab-2 select {
+    width: 117px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.search .search-right #tab-1 label,
+#tab-2 label {
+    margin-right: 12px;
+    color: #34495e;
+    position: absolute;
+    line-height: 1px;
+}
+
+.search .search-right #tab-1 span,
+#tab-2 span {
+    display: inline-block;
+    margin: 8px;
+}
+
+.search .search-left {
+    background-color: #127CE3;
+    width: 98%;
+    height: 178px;
+    float: right;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+.search .search-left h1 {
+    font-size: 13px;
+    margin-top: 7px;
+    margin-right: 5px;
+    color: #3498db;
+}
+
+.search .search-right ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.search .search-right ul.tabs li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.search .search-right ul.tabs li.current {
+    background: #3f8ecf;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.search .search-right .tab-content {
+    display: none;
+    /*! background: #C0C3F4; */
+    padding: 12px;
+    background-color: rgba(254, 245, 241, 0.2);
+}
+
+.search .search-right .tab-content.current {
+    display: inherit;
+}
+
+
+/***************************************************slider********************/
+
+#myCarousel .nav a small {
+    display: block;
+}
+
+.slider #myCarousel .carousel-inner .item img {
+    width: 100%;
+}
+
+.slider #myCarousel .carousel-inner .item .carousel-caption h3 {
+    float: right;
+    font-size: 13px;
+    color: darkcyan;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 18px;
+}
+
+.slider #myCarousel .carousel-inner .item .carousel-caption span {
+    float: right;
+    display: inline-block;
+    margin-top: 26px;
+    color: bisque;
+}
+
+.slider {
+    margin-top: 22px;
+}
+
+
+/************************************tablighat**********************/
+
+.tabligh-banneri {
+    height: 348px;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
+.tabligh-banneri .tabligh-pic .shadow a img {
+    float: right;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tabligh-banneri .tabligh-pic:hover .shadow a img {
+    opacity: 0.7;
+}
+
+.tabligh-pic .shadow {
+    background-color: #000;
+    width: 205px;
+    height: 147px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.slow4 {
+    transition: all 0.4s ease;
+}
+
+.slow8 {
+    transition: all 0.8s ease;
+}
+
+
+/**********************************************sabt-vije***************/
+
+.etela {
+    background-color: #0074E4;
+    border-radius: 3px;
+    margin-top: 20px;
+    float: right;
+    width: 84%;
+    height: 73px;
+}
+
+.etela i {
+    float: left;
+    color: #fff;
+    font-size: 42px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+.etela:hover {
+    background-color: #3F51B5;
+}
+
+.etela a {
+    text-decoration: none;
+}
+
+.etela h3 {
+    float: right;
+    color: #fff;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.etela a p {
+    color: #fff;
+    font-size: 9px;
+    margin-top: 32px;
+    margin-right: 4px;
+}
+
+.add-melk {
+    background-color: #5CB85C;
+    border-radius: 3px;
+    margin-top: 20px;
+    float: right;
+    width: 84%;
+    height: 73px;
+}
+
+.add-melk a p {
+    color: #fff;
+    font-size: 9px;
+    margin-top: 32px;
+    margin-right: 3px;
+}
+
+.add-melk h3 {
+    float: right;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.add-melk i {
+    float: left;
+    color: #fff;
+    font-size: 42px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+.add-melk:hover {
+    background-color: #31a031;
+}
+
+.add-melk a {
+    text-decoration: none;
+}
+
+.vije {
+    background-color: #673380;
+    border-radius: 3px;
+    margin-top: 20px;
+    float: right;
+    width: 84%;
+    height: 73px;
+}
+
+.vije a p {
+    color: #fff;
+    font-size: 9px;
+    margin-top: 32px;
+    margin-right: 3px;
+}
+
+.vije h3 {
+    float: right;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.vije i {
+    float: left;
+    color: #fff;
+    font-size: 42px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+.vije:hover {
+    background-color: #59137c;
+}
+
+.vije a {
+    text-decoration: none;
+}
+
+
+/*******************************************akharin-melk*************/
+
+.akharin-melk {
+    height: 335px;
+    margin-top: 15px;
+}
+
+.akharin-melk .slider-melk {
+    width: 94%;
+    height: 318px;
+    float: right;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.akharin-melk .slider-melk .title {
+    float: right;
+    font-size: 14px;
+    color: #333;
+}
+
+.akharin-melk .slider-melk .bishtar {
+    float: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.akharin-melk .slider-melk .content-slider {
+    float: right;
+    width: 100%;
+    height: 290px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.akharin-melk .slider-melk .content-slider h3 {
+    float: right;
+    font-size: 12px;
+    color: #333;
+}
+
+.akharin-melk .slider-melk .content-slider .post-slide {
+    float: right;
+    width: 140px;
+    height: 95%;
+    margin-top: 18px;
+}
+
+.akharin-melk .slider-melk .content-slider ul {
+    list-style: none;
+    margin-right: 74px;
+    margin-top: 35px;
+}
+
+.akharin-melk .slider-melk .content-slider ul li {
+    float: right;
+    width: 198px;
+    height: 285px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.akharin-melk .slider-melk .content-slider ul li a {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
+
+.akharin-melk .slider-melk .content-slider ul li .title-pic {
+    font-size: 10px;
+    text-align: center;
+    display: inline-block;
+    font-family: WYekan;
+    color: #b38080;
+}
+
+.akharin-melk .slider-melk .content-slider ul li .price-asli {
+    font-size: 13px;
+    font-family: WYekan;
+    color: #555;
+    text-align: center;
+    display: block;
+}
+
+.akharin-melk .slider-melk .content-slider ul li .price-takhfif {
+    font-size: 13px;
+    font-family: WYekan;
+    color: #555;
+    text-align: center;
+    display: block;
+}
+
+.akharin-melk .slider-melk .makhfi-left {
+    position: absolute;
+    width: 53px;
+    height: 290px;
+    background-color: #E0E0E0;
+    left: 31px;
+    display: block;
+    box-shadow: 0 0 4px -3px #968d8d;
+    margin-top: 27px;
+    z-index: 2;
+}
+
+.akharin-melk .slider-melk .makhfi-right {
+    position: absolute;
+    width: 53px;
+    height: 289px;
+    background-color: #E0E0E0;
+    display: block;
+    box-shadow: 0 0 4px -3px #968d8d;
+    margin-top: 27px;
+    z-index: 2;
+}
+
+.akharin-melk .slider-melk .makhfi-right i {
+    top: 87px;
+    position: absolute;
+    font-size: 20px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.akharin-melk .slider-melk .makhfi-left i {
+    top: 85px;
+    position: absolute;
+    font-size: 20px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.akharin-melk .slider-melk .makhfi-left i:hover {
+    transform: scale(2, 1.5);
+}
+
+.akharin-melk .slider-melk .makhfi-right i:hover {
+    transform: scale(2, 1.5);
+}
+
+.akharin-melk .content-slider {
+    width: 1082px !important;
+}
+
+.akharin-melk .content-slider ul {
+    float: left !important;
+    overflow: hidden !important;
+}
+
+
+/***************************************foooter*******************/
+
+footer {
+    background-color: #000;
+    height: 84px;
+    margin-top: 30px;
+}
+
+.footer p {
+    text-align: center;
+    color: #fff;
+    margin-top: 41px;
+}
+
+.bg-footer {
+    background-color: black;
+    height: 90px;
+    margin-top: 15px;
+}
+
+
+/*************************************safhe kharid-forosh**************/
+
+.sh-city {
+    width: 100%;
+    background-color: #E0E0E0;
+    height: 450px;
+    position: relative;
+}
+
+.sh-city .panel-sh {
+    background-color: aliceblue;
+    width: 100%;
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    height: 10%;
+    margin-top: 8px;
+    position: relative;
+}
+
+
+/*
+.sh-city .content {
+    width: 100%;
+    background-color: antiquewhite;
+    height: 50%;
+    display: none;
+}
+*/
+
+.sh-city .content {
+    width: 100%;
+    background-color: antiquewhite;
+    height: 0;
+    overflow: hidden;
+}
+
+.sh-city i {
+    position: absolute;
+    margin-right: 95px;
+    margin-top: 9px;
+    right: 0;
+    left: 0;
+}
+
+.sh-city .panel-sh h3 {
+    margin-top: 10px;
+}
+
+
+/******************************************modal**********************/
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .menu {
+        display: none;
+    }
+    .h {
+        display: block!important;
+        color: antiquewhite;
+    }
+}
+
+.h {
+    display: none;
+}
+
+
+/*************************************************register******************/
+
+.box-sabt {
+    /*height: 50px;
+	width: 100%;
+	float: right;*/
+}
+
+.back {
+    /*background-color: #fff;
+    height: 100%;
+    width: 97%;
+    border-radius: 4px;
+    margin-top: 50px;
+    display: inline-block;
+    padding-bottom: 27px;*/
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 50px;
+    display: inline-block;
+    padding-bottom: 27px;
+    overflow: hidden;
+}
+
+.back .title {
+    background-color: aliceblue;
+    border-radius: 4px 4px 00;
+    border-bottom: 1px solid #eee;
+    margin-right: 5px;
+    margin-top: 10px;
+    padding-top: 11px;
+}
+
+.back .title h3 {
+    border-bottom: 1px solid #0025ff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.back .title span {
+    float: left;
+    font-size: 12px;
+    color: #727DBC;
+}
+
+.box-sabt .text-box {
+    margin-right: 10px;
+    margin-top: 35px;
+    float: right;
+    position: relative;
+    width: 100%;
+}
+
+.box-sabt .text-box .star {
+    color: red;
+    position: absolute;
+    top: 7px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.box-sabt .text-box input {
+    background: transparent;
+    border: 1px solid #b6a8a8;
+    width: 73%;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.box-sabt .text-box .example {
+    float: right;
+    margin-top: 10px;
+    color: #c2b6b6;
+}
+
+.box-sabt .text-box span input[type=checkbox] {
+    position: absolute;
+    top: 1px;
+    right: -4px;
+}
+
+.box-sabt .text-box label {
+    margin-right: 12px;
+}
+
+.box-sabt .text-box .checked {
+    position: relative;
+}
+
+.box-sabt button {
+    width: 74% !important;
+    margin-right: 16px !important;
+    margin-top: 24px;
+}
+
+.box-sabt .makhfi .text-box {
+    margin-right: 13px;
+    margin-top: 35px;
+    float: right;
+    position: relative;
+    width: 100%;
+}
+
+.box-sabt .makhfi .text-box .example {
+    font-size: 10px;
+    margin-right: 0;
+    display: inline-block;
+    width: 76%;
+    float: right;
+}
+
+.box-sabt .makhfi .text-box .chosen {
+    width: 50%;
+}
+
+.box-sabt #ersal {
+    width: 75%;
+    margin-right: 7px;
+    margin-top: 18px;
+}
+
+
+/************************************left_box********************/
+
+.left_box {
+    margin-top: 50px;
+}
+
+.left_box h1 {
+    text-align: center;
+    color: #AE5655;
+}
+
+.left_box .text ul {
+    list-style: none;
+}
+
+.left_box .text ul li {
+    margin-top: 50px;
+}
+
+.left_box .text ul li i {
+    margin-left: 10px;
+    font-size: 30px;
+    color: #888888;
+}
+
+.left_box .text ul li i:hover {
+    /*transform: rotate(180deg);*/
+    transform: rotateZ(360deg);
+}
+
+.slow4 {
+    transition: all 0.4s ease;
+}
+
+.slow8 {
+    transition: all 0.8s ease;
+}
+
+.left_box .makhfi ul {
+    list-style: none;
+}
+
+.left_box .makhfi ul li {
+    margin-top: 50px;
+}
+
+.left_box .makhfi ul li i {
+    margin-left: 10px;
+    font-size: 30px;
+    color: #888888;
+}
+
+.left_box .makhfi ul li i:hover {
+    transform: rotateZ(360deg);
+}
+
+.left_box .makhfi ul li p {
+    margin-right: 53px;
+    margin-top: -44px;
+    line-height: 33px;
+}
+
+.left_box .makhfi {
+    display: none;
+}
+
+.left_box p {
+    margin-top: 89px;
+    color: #3C763D;
+}
+
+
+/***************************************************sabt_melk************/
+
+.right_title {
+    margin: 15px 14px 0 0;
+    font-size: 21px;
+    color: #1574E4;
+}
+
+.box_select {
+    margin-top: 10px;
+    margin-right: 35px;
+}
+
+.edame_address {
+    margin-top: 20px;
+    width: 86%;
+    margin-right: 37px;
+}
+
+.input-groupedame {
+    float: right !important;
+    width: 100% !important;
+}
+
+.input-groupedame1 {
+    float: right !important;
+    width: 99% !important;
+}
+
+.btn-me {
+    border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.btn-me1 {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input {
+    border-top-left-radius: 2px !important;
+    border-bottom-left-radius: 2px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right: none !important;
+}
+
+.metraj {
+    padding: 10px 8px 8px 39px !important;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px !important;
+    float: left !important;
+}
+
+.top {}
+
+.input_metraj {
+    width: 76% !important;
+    border-left: none !important;
+}
+
+.arz {
+    width: 90% !important;
+}
+
+.s {
+    margin-right: 39px;
+}
+
+.metr {
+    margin-left: 28px;
+}
+
+.textarea {
+    margin-right: 38px;
+    margin-left: 15px;
+}
+
+hr {
+    width: 90% !important;
+}
+
+.radio {
+    right: -18px;
+}
+
+.select_rahn {
+    width: 30%;
+    float: right;
+    margin-right: 41px;
+    margin-left: 8px;
+}
+
+.rahn {
+    width: 54%;
+    margin-right: 52px;
+}
+
+
+/********************************************************etelaat_takmili**************************/
+
+.back .content {
+    margin-bottom: 25px;
+    width: 97%;
+}
+
+.title_edit {
+    margin-top: 43px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.alert {
+    border-right-width: 46px;
+    background: #fff !important;
+}
+
+.alert i {
+    float: left;
+    cursor: pointer;
+}
+
+.alert .close {
+    float: left !important;
+}
+
+.etelaat {
+    position: relative;
+}
+
+.etelaat h1 {
+    position: absolute;
+    right: 33px;
+    border-bottom: 2px solid #0074e4;
+    padding-bottom: 11px;
+    color: #0074e4;
+    top: 22px;
+}
+
+.line {
+    border-bottom: 2px solid #ccc;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.amade_forosh {
+    margin-left: 27px;
+    margin-top: 10px;
+}
+
+.amade_forosh select {
+    width: 38%;
+    float: left;
+}
+
+.amade_forosh label {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.noe {
+    margin-right: 33px;
+    width: 89%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.noe .form-group select {
+    width: 68%;
+}
+
+.noe .star {
+    float: right;
+    position: absolute;
+    top: 11px;
+    right: 62px;
+    color: red;
+}
+
+.noe .name {
+    float: right;
+    margin-top: 8px;
+    padding-left: 15px;
+}
+
+.masahat {
+    margin-right: 37px;
+    width: 80%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.masahat .input-group {
+    width: 52%;
+}
+
+.masahat .star {
+    float: right;
+    position: absolute;
+    top: 11px;
+    right: 62px;
+    color: red;
+}
+
+.masahat .name {
+    float: right;
+    margin-top: 8px;
+    padding-left: 15px;
+}
+
+.esme {
+    margin-right: 30px;
+}
+
+.esme .star {
+    float: left;
+    margin-top: 5px;
+    margin-left: 37px;
+    color: red;
+}
+
+.box {
+    position: relative;
+    margin-top: 26px;
+    margin-right: 20px;
+}
+
+.box label {
+    position: absolute;
+    top: 5px;
+    right: 20px
+}
+
+.box label .star {
+    display: block;
+    margin-top: -14px;
+    margin-right: 50px;
+    color: red;
+}
+
+.box .right-select {
+    margin-right: 86px;
+    width: 65%;
+}
+
+.box .tag {
+    margin-right: 87px;
+    margin-top: 8px;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    color: #7E7B77;
+    width: 57%;
+}
+
+.box .right-select .adress_nahaie {
+    margin-right: 47px;
+}
+
+.map {
+    width: 90%;
+}
+
+.line1 {
+    margin-top: 90px !important;
+    border-bottom: 2px solid #ccc;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.etelat_box {
+    margin-top: 41px;
+}
+
+.moaveze {
+    margin-top: 24px;
+    margin-right: 38px;
+    position: relative;
+}
+
+.moaveze .star {
+    position: absolute;
+    left: 0;
+    right: 75px;
+    top: 5px;
+    color: red;
+}
+
+.noe .form-group input[name=moaveze_ba] {
+    margin-right: -54px;
+    width: 88%;
+}
+
+.form-group input[name=sakht],
+input[name=tahvil] {
+    margin-right: -35px;
+    width: 83%;
+}
+
+.topp {
+    padding-top: 26px;
+}
+
+.topp .input-group {
+    width: 62%;
+    /*margin-right: -34px;*/
+}
+
+.noe #tabaghe {
+    width: 69%;
+    display: inline-block;
+}
+
+.moaveze .star {
+    position: absolute;
+    left: 0;
+    top: 10px !important;
+    color: red;
+    right: auto !important;
+}
+
+.emkanat {
+    margin-right: 36px;
+}
+
+.checkbox_list {
+    margin-right: 67px;
+}
+
+.label_parking {
+    margin-right: 17px;
+    margin-top: 14px;
+}
+
+.tedad_parking {
+    margin-top: 16px;
+}
+
+.tedad_parking label {
+    float: right;
+}
+
+.tedad_parking .form-group input {
+    width: 60%;
+    float: left;
+}
+
+.mogheiyat {
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.mogheiyat .tag {
+    color: #777;
+    font-size: 10px;
+    text-align: justify;
+}
+
+.photo .tag {
+    color: #777;
+    font-size: 10px;
+    text-align: justify;
+}
+
+.photo {
+    margin-right: 19px;
+}
+
+.photo .ax {
+    width: 100%;
+    min-height: 360px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+
+/***********************************************drobdown menu*********/
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.panel_login .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.panel_login .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.panel_login .dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+.panel_login .dropdown .dropbtn {
+    padding: 10px 34px !important;
+    font-size: 18px !important;
+    line-height: 1.3333333;
+    border-radius: 5px !important;
+}
+
+.panel_login {
+    margin-top: 6px;
+}
+
+.panel_login .dropdown-content {
+    border-radius: 4px;
+    min-width: 148px !important;
+}
+
+.exit {
+    border-top: 1px solid beige;
+}
+
+.form-control {
+    padding: 2px 12px !important;
+}
+
+
+/********************************************ezafi css**************/
+
+.textbox_width {
+    width: 68% !important;
+}
+
+
+/**************************************************propertise***************************/
+
+.user {
+    border: 1px solid #eee;
+    width: 80%;
+    height: 474px;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-right: 28px;
+}
+
+.user .user_img {
+    display: block;
+    margin: 11px;
+    float: right;
+    width: 82px;
+}
+
+.user .user_name {
+    float: right;
+    display: block;
+    font-family: Vazir;
+}
+
+.user .user_edit {
+    font-size: 12px;
+    margin-top: 15px;
+    font-family: Vazir;
+    float: right;
+}
+
+.user .user_edit a {
+    text-decoration: none;
+    color: #0074e4;
+}
+
+.user .user_edit a:hover {
+    color: #004d98;
+}
+
+.user .user_edit a i {
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.user .user_etebar {
+    float: right;
+    font-family: Vazir;
+    margin-top: 10px;
+}
+
+.user .user_top {
+    width: 100%;
+    height: 22%;
+}
+
+.user .right_nav {
+    margin-right: 10px;
+}
+
+.user .right_nav ul li {
+    list-style: none;
+    margin-right: -10px;
+    padding: 9px;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.user .right_nav ul li a i {
+    margin-left: 5px;
+}
+
+.user .right_nav ul li a {
+    font-family: vazir;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+.active_menu {
+    background-color: #eee !important;
+    border-right: 3px solid #0074e4 !important;
+}
+
+.header {
+    margin: 22px;
+    font-size: 3em;
+    font-family: Vazir;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+}
+
+.nav_head ul li {
+    list-style: none;
+}
+
+.nav_head ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.nav_head ul li a {
+    text-decoration: none;
+    font-family: Vazir;
+    padding: 10px;
+}
+
+.nav_head ul .hover:hover a {
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.active_amlak {
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff !important;
+    background-color: #0074e4;
+}
+
+.white {
+    color: #fff;
+}
+
+@media screen and (max-width: 359px) {
+    .nav_head ul li {
+        margin-left: 0px;
+    }
+}
+
+.line0 {
+    border-bottom: 1px solid #eee;
+    margin: 0 auto;
+    width: 53rem;
+    margin-top: 1rem;
+}
+
+.right a {
+    text-decoration: none;
+    margin-right: 35px;
+    margin-top: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.left {
+    margin-top: 1rem;
+    margin-left: 20px;
+}
+
+.left a i {
+    margin-left: 3px;
+}
+
+.page {
+    margin-right: 48px;
+}
+
+.search_tbl {
+    width: 100%;
+    margin-top: 21px;
+    /*margin-right: 42px;*/
+}
+
+.search_tbl input {
+    width: 70%;
+    float: left;
+}
+
+.search_tbl label {
+    margin-top: 5px;
+}
+
+.namayesh {
+    margin-top: 20px;
+}
+
+.namayesh .namayesh_label {
+    float: right;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+
+.namayesh select {
+    width: 47%;
+}
+
+.namayesh .mored {
+    float: left;
+    margin-top: -28px;
+    margin-left: 34px;
+}
+
+
+/*******************tbl*********/
+
+.panel-table .panel-body {
+    padding: 0;
+}
+
+.panel-table .panel-body .table-bordered {
+    border-style: none;
+    margin: 0;
+}
+
+.panel-table .panel-body .table-bordered>thead>tr>th:first-of-type {
+    text-align: center;
+    width: 100px;
+}
+
+.panel-table .panel-body .table-bordered>thead>tr>th:last-of-type,
+.panel-table .panel-body .table-bordered>tbody>tr>td:last-of-type {
+    border-right: 0px;
+}
+
+.panel-table .panel-body .table-bordered>thead>tr>th:first-of-type,
+.panel-table .panel-body .table-bordered>tbody>tr>td:first-of-type {
+    border-left: 0px;
+}
+
+.panel-table .panel-body .table-bordered>tbody>tr:first-of-type>td {
+    border-bottom: 0px;
+    text-align: center;
+}
+
+.panel-table .panel-body .table-bordered>thead>tr:first-of-type>th {
+    border-top: 0px;
+    white-space: nowrap;
+}
+
+.panel-table .panel-footer .pagination {
+    margin: 0;
+}
+
+
+/*
+used to vertically center elements, may need modification if you're not using default sizes.
+*/
+
+.panel-table .panel-footer .col {
+    line-height: 34px;
+    height: 34px;
+}
+
+.panel-table .panel-heading .col h3 {
+    line-height: 30px;
+    height: 30px;
+}
+
+.panel-table .panel-body .table-bordered>tbody>tr>td {
+    line-height: 34px;
+}
+
+.setting a {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.box_radio {
+    text-align: right;
+    margin-right: 15px;
+}
+
+.box_radio .radio label span {
+    margin-right: 17px;
+    margin-top: -6px;
+    display: block;
+}
+
+.box_radio .radio .ya {
+    margin-right: 47px;
+    margin-top: -28px;
+    width: 72%;
+    display: block;
+    border: 1px solid #eee;
+}
+
+#propertise_addon{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0 !important;
+    border-left: none !important;
+    border-right: 1px solid #ccc !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 10px;
+    font-family: Vazir;
+}
+
+#propertise_addon1{
+    border-left: 1px solid #ccc !important;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: none !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    font-size: 10px;
+    font-family: Vazir;
+}
+
+.input-group{
+    margin-bottom: 15px;
+}
+
+.makhfi_update p{
+    font-size: 12px;
+    font-family: Vazir;
+}

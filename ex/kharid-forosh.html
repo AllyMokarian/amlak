@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="utf-8">
+    <title>سایت خبری</title>
+    <!--load css-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--<link rel="stylesheet" href="css/mdb.min.css">-->
+    <link rel="stylesheet" href="../css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <!--container-fluid-->
+    <div class="container-fluid bg_menu">
+        <!--row-menu-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="login">
+
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-success btn-lg" id="myBtn">ورود به سایت</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 style="color:red;"><span><i class="fa fa-lock"></i></span>فرم لاگین</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="usrname"><span><i class="fa fa-user"></i></span> نام کاربری</label>
+                                            <input type="text" class="form-control" id="usrname" placeholder="ایمیل حود را وارد کنید">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="psw"><span><i class="fa fa-key"></i></span>پس ورد</label>
+                                            <input type="text" class="form-control" id="psw" placeholder="پس ورد را وارد کنید">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>یاداوری<input type="checkbox" value="" checked></label>
+                                        </div>
+                                        <button type="submit" class="btn btn-default btn-success btn-block"><span><i class="fa fa-key"></i></span>ورود</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-danger pull-left" data-dismiss="modal"><span><i class="fa fa-close"></i></span>خروج</button>
+                                    <p>عضو نیستید؟<a href="#">ثبت نام</a></p>
+                                    <p>آیا رمز خود را فراموش کردید؟ <a href="#">بازیابی پس ورد</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-8">
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a class="btn btn-success" href="#">سپردن ملک رایگان</a></li>
+                        <li><a href="#">بانک املاک</a></li>
+                        <li><a href="#">املاک روی نقشه</a></li>
+                        <li><a href="#">خرید</a></li>
+                        <li><a href="#">اجاره</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!--/menu-->
+        </div>
+        <!--/row-menu-->
+    </div>
+    <!--end container-fluid-->
+
+    <!--search-->
+    <div class="container-fluid pic">
+        <div class="row">
+            <div class="col-md-12">
+                <!--search-->
+                <div class="search">
+                    <div class="search-right">
+                        <h1>پنل جستجو...</h1>
+
+                        <ul class="tabs">
+                            <li class="tab-link current" data-tab="tab-1">خرید و فروش</li>
+                            <li class="tab-link" data-tab="tab-2">رهن و اجاره</li>
+
+                        </ul>
+
+                        <div id="tab-1" class="tab-content current">
+                            <span>
+                          <label>استان :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>شهر :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>منطقه :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>نوع ملک :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>تعداد خواب :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>حداقل قیمت :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>حداکثر قیمت :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                            <span>
+                          <label>استان :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>شهر :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>منطقه :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>نوع ملک :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>تعداد خواب :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>حداقل اجاره :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>حداکثر اجاره :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>حداقل رهن :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+
+                            <span>
+                          <label>حداکثر رهن :</label>
+                          <select>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                              <option>بابل</option>
+                          </select>
+                      </span>
+                        </div>
+
+
+                        <button class="btn btn-info">جستجو</button>
+
+                    </div>
+                    <!--/search-right-->
+
+                </div>
+                <!--/search-->
+
+            </div>
+        </div>
+    </div>
+    <!--/container-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sh-city">
+                    <span class="panel-sh" onclick="dosearch();" >
+                       
+                       <i id="arrow" class="fa fa-angle-up up"></i>
+						<!--<i class="fa fa-angle-down down" style="display:none;"></i> -->
+                        
+
+                    <h3>جستجو </h3>
+                    </span>
+
+                    <div id="content" class="content slow8">
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                        salm<br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container-fluid bg-footer">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer">
+                        <p>اولین سایت من...</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/js.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!--<script src="js/mdb.min.js"></script>-->
+    <script src="../js/bootstrap-select.min.js"></script>
+    <script src="../js/jquery.slider.js"></script>
+</body>
+<script>
+
+
+</script>
+
+</html>
