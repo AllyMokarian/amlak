@@ -9,5 +9,5 @@ require ("Libs/amlak.php");
 require ("Libs/url.php")*/;
 $url = new url();
 
-
+echo "abbass";
 ?>
