@@ -9,8 +9,8 @@ class login_model extends Model
     }
 
     function login(){
-
-
+        //check 
+        $checkbox = isset($_POST['rememmber']);
         //include("amlak.php");
 
         $amlak = new amlak();
@@ -59,6 +59,12 @@ class login_model extends Model
                     $_SESSION["id"]= $res[0]['id'];
                     $_SESSION["email"]= $res[0]['email'];
                     $_SESSION["password"]= $res[0]['password'];
+                    
+                      $email_name = $_SESSION["name"];
+
+                    if($checkbox == "on"){
+                      setcookie("cookie_name",$email_name, time() + (60 * 30), "/");
+                    }
 
                     //$message = "success";
                     //$ok = true;
