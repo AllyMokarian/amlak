@@ -257,223 +257,133 @@
                                     <div class="panel-body">
                                         <table class="table table-striped table-list">
                                             <thead>
-                                                <tr>
-                                                    <th>شماره سریال درسایت</th>
-                                                    <th>عنوان</th>
-                                                    <th class="hidden-xs">مساحت</th>
-                                                    <th>اضافه شده در</th>
-                                                    <th>آخرین بروز رسانی</th>
-                                                    <th><em class="fa fa-cog" style="text-align: center;
-display: block;"></em></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <input class="check" type="checkbox" style="float: right;"> 1
+                                                
+                                                 <?php
 
-                                                    </td>
-                                                    <td>ملک1</td>
-                                                    <td>1000</td>
-                                                    <td>امسال</td>
-                                                    <td>چند ثانیه پیش</td>
-                                                    <td align="center" class="fast_update_toggle">
-                                                        <div class="makhfi_test" style="display: none;">
-                                                        <!--makhfi_update-->
-                                                        <div class="makhfi_update">
+                    $sql_melk_user = "SELECT `add_melk`.`id` ,`add_melk`.`name_user` ,`add_melk`.`noe_melk`,`add_melk`.`masahat`,`etelaat_takmili`.`sal_sakht`  FROM `add_melk` INNER JOIN `etelaat_takmili` ON `add_melk`.`id` = `etelaat_takmili`.`id_melk` WHERE `add_melk`.`name_user`=?";
+                    $data_melk_user = array($name_user);
+                    $row_etelaat_takmili = $amlak->select($sql_melk_user, $data_melk_user);
 
-                                                            <form action="#" method="post">
-                                                            <p>بروز رسانی سریع خانه و حیاط 12000 متری فروشی</p>
-                                                            <div class="input-group">
-                                                                <span id="propertise_addon" class="input-group-addon">قیمت هرمتر مربع</span>
-                                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                                                <span id="propertise_addon1" class="input-group-addon">تومان</span>
-                                                            </div>
+                    foreach ($row_etelaat_takmili as $row_takmili) {
 
+                      echo '
+                             
+                          <tr>
+                                  <td>
+                                      <input class="check" type="checkbox" style="float: right;"> 
+                                     ' . $row_takmili['id'] . '
+                                  </td>
 
-                                                            <div class="input-group">
-                                                                <span id="propertise_addon" class="input-group-addon">قیمت کل</span>
+                                 
+                                      <td>' . $row_takmili['noe_melk'] . '</td>
+                                      <td>' . $row_takmili['masahat'] . '</td>
+                          
+              
+                                   <td>' . $row_takmili['sal_sakht'] . '</td>
+                                  <td>چند ثانیه پیش</td>
+                                  <td class="find_makhfi" align="center">
+                                      <div class="makhfi_test" style="display: none;">
+                                          <!--makhfi_update-->
+                                          <div class="makhfi_update">
 
-                                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                                                <span id="propertise_addon1" class="input-group-addon">تومان</span>
-                                                            </div>
-                                                                <input type="submit" class="btn btn-sm btn-success" value="به روز رسانی">
-                                                                <a class="laghv" class="btn btn-danger btn-sm cancel-quick-edit-btn">لغو</a>
-                                                            </form>
-                                                        </div>
-                                                        </div>
-                                                        <!--/makhfi_update-->
-
-                                                        <div class="setting">
-                                                            <a class="btn btn-default update_btn"><em class="fa fa-pencil-square-o"></em>یه روز رسانی سریع</a>
-                                                            <a class="btn btn-default"><em class="fa fa-pencil"></em>ویرایش</a>
-                                                            <a class="btn btn-danger" data-toggle="modal" data-target="#delete"><em class="fa fa-trash"></em>حذف</a>
-
-                                                            <!-- Modal -->
-                                                            <div id="delete" class="modal fade" role="dialog">
-                                                                <div class="modal-dialog">
-
-                                                                    <!-- Modal content-->
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <button type="button" class="close pull-left" data-dismiss="modal">&times;</button>
-                                                                            <h4 class="modal-title pull-right">حذف آگهی فروشی </h4>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <p>Some text in the modal.</p>
-                                                                            <div class="box_radio">
-                                                                                <div class="radio">
-                                                                                    <label><input class="test" type="radio" name="optradio" value="2">
-                                                                                        <span>فروش/اجاره رفت</span>
-
-                                                                                    </label>
-                                                                                </div>
-
-                                                                                <div class="radio">
-                                                                                    <label><input class="test" type="radio" name="optradio" value="2">
-                                                                                    <span>معاوضه شد</span>
-
-                                                                                    </label>
-                                                                                </div>
-
-                                                                                <div class="radio">
-                                                                                    <label><input class="test" type="radio" name="optradio" value="2">
-                                                                                    <span>منصرف شدم</span>
-
-                                                                                    </label>
-                                                                                </div>
+                                              <form action="#" method="post">
+                                                  <p>بروز رسانی سریع خانه و حیاط 12000 متری فروشی</p>
+                                                  <div class="input-group">
+                                                      <span id="propertise_addon" class="input-group-addon">قیمت هرمتر مربع</span>
+                                                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                      <span id="propertise_addon1" class="input-group-addon">تومان</span>
+                                                  </div>
 
 
-                                                                                 <div class="radio">
-                                                                                    <label><input id="reson" class="test" type="radio" name="optradio" value="1">
-                                                                                    <span>ویا</span>
-                                                                                    <input class="ya" type="text" class="form-control" id="usr" disabled="disabled">
+                                                  <div class="input-group">
+                                                      <span id="propertise_addon" class="input-group-addon">قیمت کل</span>
 
-                                                                                    </label>
-                                                                                </div>
+                                                      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                      <span id="propertise_addon1" class="input-group-addon">تومان</span>
+                                                  </div>
+                                                  <input type="submit" class="btn btn-sm btn-success" value="به روز رسانی">
+                                                  <a class="btn btn-danger btn-sm cancel-quick-edit-btn laghv">لغو</a>
+                                              </form>
+                                          </div>
+                                      </div>
+                                      <!--/makhfi_update-->
 
-                                                                            </div>
+                                      <div id="setting">
+                                          <a class="btn btn-default update_btn"><em class="fa fa-pencil-square-o"></em>یه روز رسانی سریع</a>
+                                          <a class="btn btn-default"><em class="fa fa-pencil"></em>ویرایش</a>
+                                          <a class="btn btn-danger" data-toggle="modal" data-target="#delete"><em class="fa fa-trash"></em>حذف</a>
 
+                                          <!-- Modal -->
+                                          <div id="delete" class="modal fade" role="dialog">
+                                              <div class="modal-dialog">
 
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">انصراف</button>
+                                                  <!-- Modal content-->
+                                                  <div class="modal-content">
+                                                      <div class="modal-header">
+                                                          <button type="button" class="close pull-left" data-dismiss="modal">&times;</button>
+                                                          <h4 class="modal-title pull-right">حذف آگهی فروشی </h4>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                          <p>Some text in the modal.</p>
+                                                          <div class="box_radio">
+                                                              <div class="radio">
+                                                                  <label><input class="test" type="radio" name="optradio" value="2">
+                                                                      <span>فروش/اجاره رفت</span>
 
-                                                                            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">حذف</button>
-                                                                        </div>
-                                                                    </div>
+                                                                  </label>
+                                                              </div>
 
-                                                                </div>
-                                                            </div>
-                                                            <!--/modal-->
-                                                        </div>
+                                                              <div class="radio">
+                                                                  <label><input class="test" type="radio" name="optradio" value="2">
+                                                                  <span>معاوضه شد</span>
 
-                                                    </td>
-                                                </tr>
+                                                                  </label>
+                                                              </div>
 
+                                                              <div class="radio">
+                                                                  <label><input class="test" type="radio" name="optradio" value="2">
+                                                                  <span>منصرف شدم</span>
 
-                                                <tr>
-                                                    <td>
-                                                        <input class="check" type="checkbox" style="float: right;"> 1
-
-                                                    </td>
-                                                    <td>ملک1</td>
-                                                    <td>1000</td>
-                                                    <td>امسال</td>
-                                                    <td>چند ثانیه پیش</td>
-                                                    <td align="center" class="fast_update_toggle">
-                                                        <div class="makhfi_test" style="display: none;">
-                                                            <!--makhfi_update-->
-                                                            <div class="makhfi_update">
-
-                                                                <form action="#" method="post">
-                                                                    <p>بروز رسانی سریع خانه و حیاط 12000 متری فروشی</p>
-                                                                    <div class="input-group">
-                                                                        <span id="propertise_addon" class="input-group-addon">قیمت هرمتر مربع</span>
-                                                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                                                        <span id="propertise_addon1" class="input-group-addon">تومان</span>
-                                                                    </div>
-
-
-                                                                    <div class="input-group">
-                                                                        <span id="propertise_addon" class="input-group-addon">قیمت کل</span>
-
-                                                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                                                        <span id="propertise_addon1" class="input-group-addon">تومان</span>
-                                                                    </div>
-                                                                    <input type="submit" class="btn btn-sm btn-success" value="به روز رسانی">
-                                                                    <a class="laghv" class="btn btn-danger btn-sm cancel-quick-edit-btn">لغو</a>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <!--/makhfi_update-->
-
-                                                        <div class="setting">
-                                                            <a class="btn btn-default update_btn"><em class="fa fa-pencil-square-o"></em>یه روز رسانی سریع</a>
-                                                            <a class="btn btn-default"><em class="fa fa-pencil"></em>ویرایش</a>
-                                                            <a class="btn btn-danger" data-toggle="modal" data-target="#delete"><em class="fa fa-trash"></em>حذف</a>
-
-                                                            <!-- Modal -->
-                                                            <div id="delete" class="modal fade" role="dialog">
-                                                                <div class="modal-dialog">
-
-                                                                    <!-- Modal content-->
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header">
-                                                                            <button type="button" class="close pull-left" data-dismiss="modal">&times;</button>
-                                                                            <h4 class="modal-title pull-right">حذف آگهی فروشی </h4>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            <p>Some text in the modal.</p>
-                                                                            <div class="box_radio">
-                                                                                <div class="radio">
-                                                                                    <label><input class="test" type="radio" name="optradio" value="2">
-                                                                                        <span>فروش/اجاره رفت</span>
-
-                                                                                    </label>
-                                                                                </div>
-
-                                                                                <div class="radio">
-                                                                                    <label><input class="test" type="radio" name="optradio" value="2">
-                                                                                        <span>معاوضه شد</span>
-
-                                                                                    </label>
-                                                                                </div>
-
-                                                                                <div class="radio">
-                                                                                    <label><input class="test" type="radio" name="optradio" value="2">
-                                                                                        <span>منصرف شدم</span>
-
-                                                                                    </label>
-                                                                                </div>
+                                                                  </label>
+                                                              </div>
 
 
-                                                                                <div class="radio">
-                                                                                    <label><input id="reson" class="test" type="radio" name="optradio" value="1">
-                                                                                        <span>ویا</span>
-                                                                                        <input class="ya" type="text" class="form-control" id="usr" disabled="disabled">
+                                                               <div class="radio">
+                                                                  <label><input id="reson" class="test" type="radio" name="optradio" value="1">
+                                                                  <span>ویا</span>
+                                                                  <input class="ya" type="text" class="form-control" id="usr" disabled="disabled">
 
-                                                                                    </label>
-                                                                                </div>
+                                                                  </label>
+                                                              </div>
 
-                                                                            </div>
+                                                          </div>
 
 
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">انصراف</button>
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">انصراف</button>
 
-                                                                            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">حذف</button>
-                                                                        </div>
-                                                                    </div>
+                                                          <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">حذف</button>
+                                                      </div>
+                                                  </div>
 
-                                                                </div>
-                                                            </div>
-                                                            <!--/modal-->
-                                                        </div>
+                                              </div>
+                                          </div>
+                                          <!--/modal-->
+                                      </div>
 
-                                                    </td>
-                                                </tr>
+                                  </td>
+                              </tr>
+                          
+                          
+                                            
+                        ';
+                    }
+
+                    ?>
+
+
+                                   
 
                                             </tbody>
                                         </table>
@@ -600,14 +510,14 @@ display: block;"></em></th>
 </body>
 <script>
 
-    //modal delete
+      //modal delete
     $('.test').change(function () {
         var txt_val = $(this).val();
-        if(txt_val == 1){
-            $('.ya').prop('disabled',false);
-        }else {
+        if (txt_val == 1) {
+            $('.ya').prop('disabled', false);
+        } else {
             //txt_val == 2;
-            $('.ya').prop('disabled',true);
+            $('.ya').prop('disabled', true);
         }
 
     });
@@ -620,28 +530,68 @@ display: block;"></em></th>
 
     //update tbl
     $('.update_btn').click(function () {
-        $(this).parents('.fast_update_toggle').find('.setting').toggle();
-        $(this).parents('.fast_update_toggle').find('.makhfi_test').toggle();
+        $(this).parent().hide();
+        //$(this).parents('.body_tr').find('.hide_tr').hide();
+        $(this).parent().parent().find('.makhfi_test').show();
     });
 
     //laghv
     $('.laghv').click(function () {
-        $(this).parents('.fast_update_toggle').find('.setting').toggle();
-        $(this).parents('.fast_update_toggle').find('.makhfi_test').toggle();
+        $(this).parents('.find_makhfi').find('#setting').show();
+        $(this).parents('.find_makhfi').find('.makhfi_test').hide();
     });
 
     //all
     $('.all').click(function () {
-        $( ".check" ).prop( "checked", true );
+        $(".check").prop("checked", true);
         //$('#update_fast').prop("disabled",true);
         $('#update_fast').removeAttr('disabled');
     });
 
     //not_all
     $('.not_all').click(function () {
-        $( ".check" ).prop( "checked", false );
-        $('#update_fast').attr('disabled',true);
+        $(".check").prop("checked", false);
+        $('#update_fast').attr('disabled', true);
     });
+</script>
+
+
+<script>
+  var namayesh = 1;
+  var safhe=1;
+
+  $('.namayesh select').change(function () {
+      namayesh = $(this).val();
+      paginate();
+  });
+
+  $('.pagination li').click(function(){
+      safhe = parseInt($(this).find('a').text());
+      paginate();
+  });
+
+
+
+function paginate() {
+    $.ajax({
+        url: '../../../pagination/run',
+        type: "post",
+        dataType: "json",
+        data: {
+            namayesh: namayesh,safhe:safhe
+        },
+        success: function (data) {
+           // console.log(data);
+            pageCount = data[0]['pageCount'];
+            alert(pageCount);
+
+           $.each(data[1], function (index, value) {
+                // alert(value['province_id']);
+                console.log(value);
+           });
+        }
+    }); //ajax
+}
 </script>
 
 </html>
